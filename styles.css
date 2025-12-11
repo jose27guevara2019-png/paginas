@@ -1,0 +1,269 @@
+/* ====== ESTILOS GENERALES ====== */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background: #0b0c10;
+  color: #f2f2f2;
+  line-height: 1.6;
+}
+
+/* ====== HEADER / NAV ====== */
+header {
+  background: #0b0c10;
+  border-bottom: 1px solid #1f2833;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+.nav-container {
+  max-width: 1100px;
+  margin: auto;
+  padding: 15px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo {
+  font-weight: bold;
+  font-size: 20px;
+  color: #66fcf1;
+}
+
+nav a {
+  color: #c5c6c7;
+  text-decoration: none;
+  margin-left: 15px;
+  font-size: 14px;
+}
+
+nav a:hover,
+nav a.active {
+  color: #66fcf1;
+}
+
+/* ====== CONTENEDOR PRINCIPAL ====== */
+main {
+  max-width: 1100px;
+  margin: 30px auto;
+  padding: 0 20px 40px;
+}
+
+/* ====== HERO (PÁGINA INICIO) ====== */
+.hero {
+  display: grid;
+  grid-template-columns: minmax(0, 2fr) minmax(0, 1.5fr);
+  align-items: center;
+  gap: 30px;
+  padding: 30px 0;
+}
+
+.hero h1 {
+  font-size: 38px;
+  color: #66fcf1;
+  margin-bottom: 10px;
+}
+
+.hero h2 {
+  font-size: 20px;
+  color: #45a29e;
+  margin-bottom: 15px;
+}
+
+.hero p {
+  color: #c5c6c7;
+}
+
+.hero-buttons {
+  margin-top: 20px;
+}
+
+.btn {
+  display: inline-block;
+  padding: 10px 18px;
+  border-radius: 4px;
+  text-decoration: none;
+  font-size: 14px;
+  margin-right: 8px;
+}
+
+.btn-primary {
+  background: #66fcf1;
+  color: #0b0c10;
+  font-weight: bold;
+}
+
+.btn-primary:hover {
+  filter: brightness(1.1);
+}
+
+.btn-outline {
+  border: 1px solid #66fcf1;
+  color: #66fcf1;
+}
+
+.btn-outline:hover {
+  background: #1f2833;
+}
+
+/* Imagen / avatar genérico */
+.hero-avatar {
+  width: 100%;
+  max-width: 260px;
+  height: 260px;
+  border-radius: 50%;
+  border: 3px solid #66fcf1;
+  background: radial-gradient(circle at top, #45a29e, #0b0c10);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 22px;
+  color: #fff;
+}
+
+/* ====== SECCIONES ====== */
+.section-title {
+  font-size: 24px;
+  margin-bottom: 10px;
+  color: #66fcf1;
+}
+
+.section-subtitle {
+  font-size: 14px;
+  margin-bottom: 20px;
+  color: #c5c6c7;
+}
+
+/* ====== GRID PROYECTOS ====== */
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 20px;
+}
+
+.project-card {
+  background: #1f2833;
+  border-radius: 10px;
+  padding: 18px;
+  border: 1px solid #202833;
+  transition: 0.3s;
+}
+
+.project-card:hover {
+  transform: translateY(-4px);
+  border-color: #66fcf1;
+}
+
+.project-card h3 {
+  margin-bottom: 8px;
+  color: #66fcf1;
+}
+
+.project-card p {
+  font-size: 14px;
+  color: #c5c6c7;
+  margin-bottom: 10px;
+}
+
+.project-tags {
+  font-size: 12px;
+  color: #9da3a6;
+  margin-bottom: 12px;
+}
+
+.project-links a {
+  font-size: 13px;
+  color: #66fcf1;
+  text-decoration: none;
+  margin-right: 10px;
+}
+
+.project-links a:hover {
+  text-decoration: underline;
+}
+
+/* ====== LISTAS DE SKILLS ====== */
+.skills-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 10px;
+}
+
+.skill-pill {
+  font-size: 12px;
+  padding: 6px 10px;
+  border-radius: 20px;
+  background: #1f2833;
+  color: #c5c6c7;
+}
+
+/* ====== SOBRE MÍ ====== */
+.about-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 2fr) minmax(0, 2fr);
+  gap: 30px;
+}
+
+.about-block {
+  background: #1f2833;
+  border-radius: 10px;
+  padding: 18px;
+  border: 1px solid #202833;
+}
+
+.about-block h3 {
+  margin-bottom: 10px;
+  color: #66fcf1;
+}
+
+.about-block p {
+  font-size: 14px;
+  color: #c5c6c7;
+}
+
+/* ====== CONTACTO (si lo usas en alguna página) ====== */
+.contact-card {
+  background: #1f2833;
+  border-radius: 10px;
+  padding: 18px;
+  border: 1px solid #202833;
+  max-width: 500px;
+}
+
+.contact-card p {
+  font-size: 14px;
+  color: #c5c6c7;
+  margin-bottom: 8px;
+}
+
+/* ====== FOOTER ====== */
+footer {
+  border-top: 1px solid #1f2833;
+  text-align: center;
+  padding: 15px;
+  font-size: 12px;
+  color: #9da3a6;
+}
+
+/* ====== RESPONSIVE ====== */
+@media (max-width: 768px) {
+  .hero {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+  .hero-buttons {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  .about-grid {
+    grid-template-columns: 1fr;
+  }
+}
